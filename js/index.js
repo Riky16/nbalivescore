@@ -3,7 +3,7 @@
 // });
 
 let date = "&date=20201225"
-let apiUrl = "http://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard";
+let apiUrl = "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard";
 
 console.log(apiUrl);
 $.ajax({
