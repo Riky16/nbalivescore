@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "Permanent Marker";
+  src: url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#imgAway,
+#imgHome {
+  width: 25%;
+  height: auto;
+}
+
+table {
+  font-family: Permanent Marker;
+  width: 100%;
+  text-align: center;
+}
