@@ -16,6 +16,9 @@
 }
 
 table {
+  /* border: 1px solid red; */
+  width: 750px;
+  height: auto;
   font-family: Permanent Marker;
   width: 100%;
   text-align: center;
