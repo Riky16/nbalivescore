@@ -7,6 +7,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Permanent Marker;
 }
 
 #imgAway,
@@ -19,7 +20,20 @@ table {
   /* border: 1px solid red; */
   width: 750px;
   height: auto;
-  font-family: Permanent Marker;
   width: 100%;
   text-align: center;
+}
+
+.border {
+  border: 1px solid red;
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+}
+
+.score {
+  font-size: 2.5em;
 }

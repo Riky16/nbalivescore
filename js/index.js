@@ -48,7 +48,16 @@ function getEventsByDate(data) {
     $(imgHome).attr('src', homeTeamLogo);
     $(imgAway).attr('src', awayTeamLogo);
 
+    let period = data.events[gameEvents].status.period
+    let displayClock = data.events[gameEvents].status.displayClock
+    $(dPeriod).text(period + " Q")
+    $(dClock).text(displayClock)
 
-    $(casa).text(data.events[gameEvents].competitions[0].competitors[0].score)
-    $(trasferta).text(data.events[gameEvents].competitions[0].competitors[1].score)
+    $(scoreHome).text(data.events[gameEvents].competitions[0].competitors[0].score)
+    $(scoreAway).text(data.events[gameEvents].competitions[0].competitors[1].score)
+
+    // Stats
+    // let topscoreHome = data.events[gameEvents].competitions[0].competitors[0].team.links[2].href
+    // $(test).text(displayClock)
+
 }
