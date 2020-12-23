@@ -16,6 +16,16 @@
   height: auto;
 }
 
+#pPhotoHome,
+#pPhotoAway,
+#rPhotoHome,
+#rPhotoAway,
+#aPhotoHome,
+#aPhotoAway {
+  width: 15%;
+  height: auto;
+}
+
 table {
   /* border: 1px solid red; */
   width: 750px;
