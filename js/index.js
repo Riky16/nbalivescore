@@ -85,7 +85,7 @@ function getEventsByDate(data) {
     // Rebounds Away
     let topscoreRnameAway = data.events[gameEvents].competitions[0].competitors[0].leaders[1].leaders[0].athlete.fullName
     let topscoreRAway = data.events[gameEvents].competitions[0].competitors[0].leaders[1].leaders[0].value
-    let topscoreRphotoAway = data.events[gameEvents].competitions[0].competitors[1].leaders[1].leaders[0].athlete.headshot
+    let topscoreRphotoAway = data.events[gameEvents].competitions[0].competitors[0].leaders[1].leaders[0].athlete.headshot
     console.log(topscoreRnameAway)
     $(rNameAway).text(topscoreRnameAway)
     $(rScoreAway).text(topscoreRAway)
@@ -102,7 +102,7 @@ function getEventsByDate(data) {
   // Assist Away
   let topscoreAnameAway = data.events[gameEvents].competitions[0].competitors[0].leaders[2].leaders[0].athlete.fullName
   let topscoreAAway = data.events[gameEvents].competitions[0].competitors[0].leaders[2].leaders[0].value
-  let topscoreAphotoAway = data.events[gameEvents].competitions[0].competitors[1].leaders[2].leaders[0].athlete.headshot
+  let topscoreAphotoAway = data.events[gameEvents].competitions[0].competitors[0].leaders[2].leaders[0].athlete.headshot
   console.log(topscoreRnameAway)
   $(aNameAway).text(topscoreAnameAway)
   $(aScoreAway).text(topscoreAAway)
