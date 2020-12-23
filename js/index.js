@@ -12,9 +12,9 @@ setInterval(
 
 
 // Update this with the numer of events
-let gameEvents = 0;
+let gameEvents = 1;
 
-let date = "&date=20201225"
+let date = "?date=20201225"
 let apiUrl = "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard";
 
 console.log(apiUrl);
@@ -61,7 +61,7 @@ function getEventsByDate(data) {
     let topscorePnameHome = data.events[gameEvents].competitions[0].competitors[1].leaders[0].leaders[0].athlete.fullName
     let topscorePHome = data.events[gameEvents].competitions[0].competitors[1].leaders[0].leaders[0].value
     let topscorePphotoHome = data.events[gameEvents].competitions[0].competitors[1].leaders[0].leaders[0].athlete.headshot
-    console.log(topscorePnameHome)
+    // console.log(topscorePnameHome)
     $(pNameHome).text(topscorePnameHome)
     $(pScoreHome).text(topscorePHome)
     $(pPhotoHome).attr('src', topscorePphotoHome)
@@ -69,7 +69,7 @@ function getEventsByDate(data) {
     let topscorePnameAway = data.events[gameEvents].competitions[0].competitors[0].leaders[0].leaders[0].athlete.fullName
     let topscorePAway = data.events[gameEvents].competitions[0].competitors[0].leaders[0].leaders[0].value
     let topscorePphotoAway = data.events[gameEvents].competitions[0].competitors[0].leaders[0].leaders[0].athlete.headshot
-    console.log(topscorePnameAway)
+    // console.log(topscorePnameAway)
     $(pNameAway).text(topscorePnameAway)
     $(pScoreAway).text(topscorePAway)
     $(pPhotoAway).attr('src', topscorePphotoAway)
@@ -78,7 +78,7 @@ function getEventsByDate(data) {
     let topscoreRnameHome = data.events[gameEvents].competitions[0].competitors[1].leaders[1].leaders[0].athlete.fullName
     let topscoreRHome = data.events[gameEvents].competitions[0].competitors[1].leaders[1].leaders[0].value
     let topscoreRphotoHome = data.events[gameEvents].competitions[0].competitors[1].leaders[1].leaders[0].athlete.headshot
-    console.log(topscoreRnameHome)
+    // console.log(topscoreRnameHome)
     $(rNameHome).text(topscoreRnameHome)
     $(rScoreHome).text(topscoreRHome)
     $(rPhotoHome).attr('src', topscoreRphotoHome)
@@ -86,7 +86,7 @@ function getEventsByDate(data) {
     let topscoreRnameAway = data.events[gameEvents].competitions[0].competitors[0].leaders[1].leaders[0].athlete.fullName
     let topscoreRAway = data.events[gameEvents].competitions[0].competitors[0].leaders[1].leaders[0].value
     let topscoreRphotoAway = data.events[gameEvents].competitions[0].competitors[0].leaders[1].leaders[0].athlete.headshot
-    console.log(topscoreRnameAway)
+    // console.log(topscoreRnameAway)
     $(rNameAway).text(topscoreRnameAway)
     $(rScoreAway).text(topscoreRAway)
     $(rPhotoAway).attr('src', topscoreRphotoAway)
@@ -95,7 +95,7 @@ function getEventsByDate(data) {
   let topscoreAnameHome = data.events[gameEvents].competitions[0].competitors[1].leaders[2].leaders[0].athlete.fullName
   let topscoreAHome = data.events[gameEvents].competitions[0].competitors[1].leaders[2].leaders[0].value
   let topscoreAphotoHome = data.events[gameEvents].competitions[0].competitors[1].leaders[2].leaders[0].athlete.headshot
-  console.log(topscoreAnameHome)
+  // console.log(topscoreAnameHome)
   $(aNameHome).text(topscoreAnameHome)
   $(aScoreHome).text(topscoreAHome)
   $(aPhotoHome).attr('src', topscoreAphotoHome)
@@ -103,7 +103,7 @@ function getEventsByDate(data) {
   let topscoreAnameAway = data.events[gameEvents].competitions[0].competitors[0].leaders[2].leaders[0].athlete.fullName
   let topscoreAAway = data.events[gameEvents].competitions[0].competitors[0].leaders[2].leaders[0].value
   let topscoreAphotoAway = data.events[gameEvents].competitions[0].competitors[0].leaders[2].leaders[0].athlete.headshot
-  console.log(topscoreRnameAway)
+  // console.log(topscoreRnameAway)
   $(aNameAway).text(topscoreAnameAway)
   $(aScoreAway).text(topscoreAAway)
   $(aPhotoAway).attr('src', topscoreAphotoAway)
