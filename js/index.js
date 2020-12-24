@@ -1,14 +1,8 @@
-// $(document).ready(() => {
-
-// });
-
-
 setInterval(
   function(){ 
     $.getJSON(apiUrl, getEventsByDate);
     
    }, 10000);
-
 
 
 // Update this with the numer of events
